@@ -24,6 +24,14 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 #bundle of bootstrap
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
+#bundle for font awesome
+gem 'font-awesome-sass', '~> 4.6', '>= 4.6.2'
+#bundle for bootstrap extra
+gem 'bootstrap-sass-extras', '~> 0.0.2'
+#bundle for authentication 
+gem 'devise', '~> 4.2'
+#bundle for simple form
+gem 'simple_form', '~> 3.3', '>= 3.3.1'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -45,6 +53,11 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+end
+
+group :production do
+  gem 'rails_12factor', '~> 0.0.3'
+  gem 'pg', '~> 0.19.0'
 end
 
 source 'https://rubygems.org'
